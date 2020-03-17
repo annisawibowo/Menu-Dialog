@@ -11,8 +11,8 @@
         android:label="Intro"
         tools:layout="@layout/fragment_title">
         <action
-            android:id="@+id/action_titleFragment_to_gameFragment"
-            app:destination="@id/gameFragment" />
+            android:id="@+id/action_titleFragment_to_rulesfragment"
+            app:destination="@id/rulesfragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -52,5 +52,25 @@
             app:popUpTo="@+id/titleFragment"
             app:popUpToInclusive="false" />
     </fragment>
+    <fragment
+        android:id="@+id/rulesfragment"
+        android:name="com.example.projecttujuh.RulesGame"
+        android:label="@string/app_name"
+        tools:layout="@layout/rulesl" >
+        <action
+            android:id="@+id/action_rulesfragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+<fragment
+    android:id="@+id/aboutfragment"
+    android:name="com.example.projecttujuh.About"
+    android:label="@string/app_name"
+    tools:layout="@layout/about">
+    <action
+        android:id="@+id/action_aboutfragment_to_titleFragment"
+        app:destination="@id/titleFragment"/>
+</fragment>
+
+
 
 </navigation>

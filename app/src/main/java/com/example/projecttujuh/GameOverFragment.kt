@@ -11,6 +11,7 @@ import com.example.projecttujuh.databinding.FragmentGameOverBinding
 
 class GameOverFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater,container: ViewGroup?,savedInstanceState: Bundle?): View? {
+ 
         val binding: FragmentGameOverBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_game_over, container, false)
         binding.tryAgainButton.setOnClickListener { view: View ->   view.findNavController()
             .navigate(R.id.action_gameOverFragment_to_gameFragment)
